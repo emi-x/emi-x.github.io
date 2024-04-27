@@ -1,0 +1,96 @@
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-Black.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-Black.woff) format('woff');
+  font-weight:900;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-Med.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-Med.woff) format('woff');
+  font-weight:500;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-BoldItalic.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-BoldItalic.woff) format('woff');
+  font-weight:700;
+  font-style:italic;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-Bold.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-Bold.woff) format('woff');
+  font-weight:700;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-ExBdItalic.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-ExBdItalic.woff) format('woff');
+  font-weight:800;
+  font-style:italic;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-Italic.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-Italic.woff) format('woff');
+  font-weight:400;
+  font-style:italic;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-MedItalic.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-MedItalic.woff) format('woff');
+  font-weight:500;
+  font-style:italic;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-Reg.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-Reg.woff) format('woff');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-ExBd.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-ExBd.woff) format('woff');
+  font-weight:800;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-UltraItalic.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-UltraItalic.woff) format('woff');
+  font-weight:1000;
+  font-style:italic;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-Ultra.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-Ultra.woff) format('woff');
+  font-weight:1000;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Grenadine MVB';
+  src:url(../fonts/GrenadineMVB-BlkItalic.woff2) format('woff2'),
+  url(../fonts/GrenadineMVB-BlkItalic.woff) format('woff');
+  font-weight:900;
+  font-style:italic;
+  font-display:swap
+}

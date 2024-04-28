@@ -26,7 +26,7 @@ function updateTag() {
 
 function updateColor(event) {
   color = tagColor.value;
-  document.getElementById('factionTagColor').innerHTML = 'span.faction-tag{color: ' + color + "}";
+  document.getElementById('factionTagColor').innerHTML = "span.faction-tag{color: " + color + "}";
 }
 
 function updateTheme() {
@@ -71,9 +71,30 @@ pinBadgeElement.onchange = function() {
 	updatePinBadge();
 }
 
+function doTimestamps() {	
+	const dateOptions = {
+		weekday:"short",year:"numeric",month:"short",day:"numeric",hour12:"true",hour:"2-digit",minute:"2-digit",second:"2-digit",
+	}
+	const timestampOptions = {
+		hour:"2-digit",minute:"2-digit",hour12:"true",
+	}
+	var unix = Date.now()-(2**23);
+	var unix2 = new Date().toLocaleString("en-US", dateOptions);
+	document.getElementById('load-message').innerHTML = "Site loaded at " + unix2;
+	var spans = document.getElementsByTagName("span");
+	var times = document.getElementsByClassName("timestamps");
+	var tag = factionElement.value;
+	for (var t=0;t<times.length;t++) {
+		if (times[t]) {
+			times[t].innerHTML = new Date(unix+((t+1)*(2**19))).toLocaleString("en-US", timestampOptions);
+		}
+	}
+}
+
 window.onload = function() {
 	updateName();
 	updateTag();
 	updateColor();
 	updatePinBadge();
+	doTimestamps();
 }

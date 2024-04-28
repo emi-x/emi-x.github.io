@@ -287,3 +287,11 @@ ul.chat-body li.chat-line {
   border-radius: 1em;
   color: var(--chat-badge-text-color);
 }
+#page-loaded {
+  text-align: center;
+  font-weight: 400;
+  color: var(--chat-server-action-text-color);
+}
+.timestamps {
+	border-bottom: 1px dashed var(--chat-abbr-underline-color);
+}

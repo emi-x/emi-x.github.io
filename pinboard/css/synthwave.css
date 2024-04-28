@@ -158,3 +158,62 @@ html {
     --icon-badge-color-contributor: #58a0ff;
     --icon-badge-color-donator: #55ebff;
 }
+.pin-badge {
+    box-shadow: 0 0 2px #fddcff, 0 0 5px #ff1fc7f5, 0 0 0 1px #fddcff;
+    text-shadow: 0 0 2px #001716, 0 0 5px #f903d4f5, 0 0 8px #f903bbf5, 0 0 10px #f103f9f0;
+    background: var(--chat-badge-background);
+}
+ul.chat-body li.chat-line {
+    padding: 5px 0; /* add padding for the badge glow */
+}
+
+/* colored chat icon badges */
+[title="Owner"] {
+    color: var(--icon-badge-color-owner);
+    text-shadow: 0 0 2px #000, 0 0 3px var(--icon-badge-color-owner), 0 0 6px var(--icon-badge-color-owner);
+}
+
+[title="Administrator"] {
+    color: var(--icon-badge-color-administrator);
+    text-shadow: 0 0 2px #000, 0 0 3px var(--icon-badge-color-administrator), 0 0 6px var(--icon-badge-color-administrator);
+}
+
+[title="Moderator"] {
+    color: var(--icon-badge-color-moderator);
+    text-shadow: 0 0 2px #000, 0 0 3px var(--icon-badge-color-moderator), 0 0 6px var(--icon-badge-color-moderator);
+}
+
+[title="Trial Moderator"] {
+    color: var(--icon-badge-color-trialmod);
+    text-shadow: 0 0 2px #000, 0 0 3px var(--icon-badge-color-trialmod), 0 0 6px var(--icon-badge-color-trialmod);
+}
+
+[title="Developer"] {
+    color: var(--icon-badge-color-developer);
+    text-shadow: 0 0 2px #000, 0 0 3px var(--icon-badge-color-developer), 0 0 6px var(--icon-badge-color-developer);
+}
+
+[title="Contributor"] {
+    color: var(--icon-badge-color-contributor);
+    text-shadow: 0 0 2px #000, 0 0 3px var(--icon-badge-color-contributor), 0 0 6px var(--icon-badge-color-contributor);
+}
+
+[title="Donator"] {
+    color: var(--icon-badge-color-donator);
+    text-shadow: 0 0 2px #000, 0 0 3px var(--icon-badge-color-donator), 0 0 6px var(--icon-badge-color-donator);
+}
+
+.flair.icon-badge {
+    color: var(--icon-badge-color-default);
+    text-shadow: 0 0 2px #000, 0 0 3px currentColor, 0 0 6px currentColor;
+}
+
+/* shadow under names*/
+.user, .flair.faction-tag {
+    text-shadow: 0 0 3px #150025, 0 0 3px #ffffffb5;
+}
+
+/* chat header glow */
+#chat-header {
+	text-shadow: 0 0 2px #001716, 0 0 5px #03edf9ed, 0 0 10px #03edf9cf, 0 0 15px #03edf9cf;
+}

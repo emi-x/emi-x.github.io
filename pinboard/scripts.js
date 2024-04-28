@@ -2,6 +2,7 @@ var nameElement = document.getElementById("usernameInput")
 var factionElement = document.getElementById("factionInput")
 var tagColorElement = document.getElementById("tagHex")
 var themeElement = document.getElementById("themeSetting")
+var pinBadgeElement = document.getElementById("pinsBadge")
 
 function updateName() {
 	var spans = document.getElementsByTagName("span");
@@ -40,6 +41,25 @@ function updateTheme() {
 	document.getElementById("pageTheme").href = "css/" + theme;
 }
 
+function updatePinBadge() {
+	var spans = document.getElementsByTagName("span");
+	var badge = pinBadgeElement.value
+	if (badge!=0){
+		for (var i=0;i<spans.length;i++) {
+			if (spans[i].className.includes('pin-badge')) {
+				spans[i].innerHTML = badge;
+				spans[i].style = ""
+			}
+		}
+	} else {
+		for (var i=0;i<spans.length;i++) {
+			if (spans[i].className.includes('pin-badge')) {
+				spans[i].style = "display: none;"
+			}
+		}
+	}
+}
+
 tagColorElement.onchange = function() {
 	updateColor();
 }
@@ -56,8 +76,13 @@ themeElement.onchange = function() {
 	updateTheme();
 }
 
+pinBadgeElement.onchange = function() {
+	updatePinBadge();
+}
+
 window.onload = function() {
 	updateName();
 	updateTag();
 	updateColor();
+	updatePinBadge();
 }

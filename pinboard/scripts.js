@@ -1,8 +1,8 @@
 var nameElement = document.getElementById("usernameInput")
 var factionElement = document.getElementById("factionInput")
-var tagColorElement = document.getElementById("tagHex")
 var themeElement = document.getElementById("themeSetting")
 var pinBadgeElement = document.getElementById("pinsBadge")
+var tagColor = document.getElementById("tagColor")
 
 function updateName() {
 	var spans = document.getElementsByTagName("span");
@@ -24,16 +24,9 @@ function updateTag() {
 	};
 }
 
-function updateColor() {
-  var re = /[0-9A-Fa-f]{6}/g;
-  var inputString = tagColorElement.value;
-
-  if(re.test(inputString)) {
-	var color = 'span.faction-tag{color: #' + inputString + "}";
-    document.getElementById('factionTagColor').innerHTML = color;
-  } else {
-    alert('invalid hex code');
-  }
+function updateColor(event) {
+  color = tagColor.value;
+  document.getElementById('factionTagColor').innerHTML = 'span.faction-tag{color: ' + color + "}";
 }
 
 function updateTheme() {
@@ -60,9 +53,7 @@ function updatePinBadge() {
 	}
 }
 
-tagColorElement.onchange = function() {
-	updateColor();
-}
+tagColor.addEventListener("input", updateColor, false);
 
 nameElement.onchange = function() {
 	updateName();

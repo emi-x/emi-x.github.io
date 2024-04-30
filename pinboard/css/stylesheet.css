@@ -295,3 +295,24 @@ ul.chat-body li.chat-line {
 .timestamps {
 	border-bottom: 1px dashed var(--chat-abbr-underline-color);
 }
+.staff:before {
+	font-family: "Font Awesome 6 Pro";
+	font-weight: 900;
+	font-style: normal;
+	content: "\f3ed";
+	margin-right: .25rem;
+}
+.owner:before {
+	font-family: "Font Awesome 6 Pro";
+	font-weight: 900;
+	font-style: normal;
+	content: "\f08d";
+	margin-right: .25rem;
+}
+.syndrome:before {
+	font-family: "Font Awesome 6 Pro";
+	font-weight: 400;
+	font-style: normal;
+	content: "\e020";
+	margin-right: .25rem;
+}

@@ -3,9 +3,12 @@ var factionElement = document.getElementById("factionInput")
 var themeElement = document.getElementById("themeSetting")
 var pinBadgeElement = document.getElementById("pinsBadge")
 var tagColor = document.getElementById("tagColor")
+var ownerIcon = document.getElementById("owner")
+var staffIcon = document.getElementById("staff")
+var syndromeIcon = document.getElementById("syndrome")
+var spans = document.getElementsByTagName("span")
 
 function updateName() {
-	var spans = document.getElementsByTagName("span");
 	var name = nameElement.value;
 	for (var i=0;i<spans.length;i++) {
 		if (spans[i].className.includes('user')) {
@@ -15,7 +18,6 @@ function updateName() {
 }
 
 function updateTag() {
-	var spans = document.getElementsByTagName("span");
 	var tag = factionElement.value;
 	for (var i=0;i<spans.length;i++) {
 		if (spans[i].className.includes('faction-tag')) {
@@ -35,7 +37,6 @@ function updateTheme() {
 }
 
 function updatePinBadge() {
-	var spans = document.getElementsByTagName("span");
 	var badge = pinBadgeElement.value
 	if (badge!=0){
 		for (var i=0;i<spans.length;i++) {
@@ -89,6 +90,26 @@ function doTimestamps() {
 			times[t].innerHTML = new Date(unix+((t+1)*(2**19))).toLocaleString("en-US", timestampOptions);
 		}
 	}
+}
+
+function iconCheck() {
+	var ownerCheck = "";
+	var staffCheck = "";
+	var syndromeCheck = "";
+	if (ownerIcon.checked) {
+		var ownerCheck = "<i class=\"owner\"></i>"
+	};
+	if (staffIcon.checked) {
+		var staffCheck = "<i class=\"staff\"></i>"
+	};
+	if (syndromeIcon.checked) {
+		var syndromeCheck = "<i class=\"syndrome\"></i>"
+	};
+	for (var i=0;i<spans.length;i++) {
+		if (spans[i].className.includes('icons')) {
+			spans[i].innerHTML = ownerCheck + staffCheck + syndromeCheck
+		}
+	};
 }
 
 window.onload = function() {

@@ -127,16 +127,33 @@ body {
     background: var(--panel-background);
     color: var(--panel-text-color);
 }
-#settings {
+#left-panel {
 	position: fixed;
 	left: 5%;
 	top: 5%;
-	width: 20%;
-	min-width: 200px;
+	width: 50%;
+	min-width: 500px;
+	height: 90%;
+	overflow: auto;
+	display: table;
+}
+#settings {
+	float: left;
+	width: 40%;
 	box-shadow: 0 0 10px 5px #0009;
     background: var(--panel-background);
     color: var(--panel-text-color);
 	padding: 1rem;
+	margin: 1rem;
+}
+#info-box {
+	float: right;
+	width: 40%;
+	box-shadow: 0 0 10px 5px #0009;
+    background: var(--panel-background);
+    color: var(--panel-text-color);
+	padding: 1rem;
+	margin: 1rem;
 }
 #chat-header {
   color: var(--panel-header-text-color);
